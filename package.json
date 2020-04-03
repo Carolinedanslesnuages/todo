@@ -5,7 +5,9 @@
   "scripts": {
     "start": "npm run serve",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "vue-cli-service build -d docs",
+    "predeploy": "npm run build",
+    "deploy": "surge docs literate-fish.surge.sh",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit"
@@ -45,7 +47,9 @@
     "stylus-loader": "^3.0.2",
     "vue-cli-plugin-tailwind": "~1.2.0",
     "vue-cli-plugin-vuetify": "^2.0.5",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "rimraf": "^3.0.2",
+    "surge": "^0.21.3"
   },
   "eslintConfig": {
     "root": true,
