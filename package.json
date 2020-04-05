@@ -5,9 +5,9 @@
   "scripts": {
     "start": "npm run serve",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build -d docs",
+    "build": "vue-cli-service build -d dist",
     "predeploy": "npm run build",
-    "deploy": "surge docs literate-fish.surge.sh",
+    "deploy": "surge dist my-little-todo.surge.sh",
     "lint": "vue-cli-service lint",
     "test:e2e": "vue-cli-service test:e2e",
     "test:unit": "vue-cli-service test:unit"
