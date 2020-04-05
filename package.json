@@ -5,7 +5,7 @@
   "scripts": {
     "start": "npm run serve",
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build -d dist",
+    "build": "vue-cli-service build",
     "predeploy": "npm run build",
     "deploy": "surge dist my-little-todo.surge.sh",
     "lint": "vue-cli-service lint",
