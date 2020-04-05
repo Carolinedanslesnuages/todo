@@ -53,7 +53,6 @@ export default new Vuex.Store({
   getters: {
     allTodos (state) {
       const allTodos = Object.keys(state.todos).map(key => state.todos[key])
-      console.log(allTodos)
       return allTodos
     },
     allTodo (state) {
